@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class KafkaConsumer {
 
-    @KafkaListener(topics = "evt_mw_notification", groupId = "test")
+    @KafkaListener(topics = "evt_notification", groupId = "test")
     public void consume(String message) {
         // Process the Kafka message
         //System.out.println("thread id {}"+ Thread.currentThread().getId() + "Received message: " + message);
